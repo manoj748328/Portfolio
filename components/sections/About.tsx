@@ -4,35 +4,40 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 
 export default function About() {
-  const imageUrl = "https://images.unsplash.com/photo-1493612276216-ee3925520721?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tfGVufDB8fDB8fHww";
+  // 1. Paste your direct image link here.
+  // Make sure it ends with an image extension (like .jpg or .png).
+  // For now, I have created a sample link representing your image.
+  const imageUrl = "\WhatsApp Image 2026-04-14 at 17.58.47.jpeg"; 
 
   return (
     <section id="about" className="section-container pt-32 bg-white dark:bg-slate-950 transition-colors duration-300">
-      {/* Grid changed to 12 columns to allow for 40/60 split (5 cols / 7 cols) */}
+      {/* 40/60 Grid Split (5 cols / 7 cols) */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-20 items-center">
 
-        {/* LEFT SIDE: Image Section (40% width / 5 of 12 columns) */}
+        {/* LEFT SIDE: Image Section (40% width) */}
         <div className="relative group md:col-span-5">
-          {/* Background decorative element */}
+          {/* Decorative shadow element */}
           <div className="absolute -inset-4 bg-brand-sage/10 rounded-[2rem] scale-95 group-hover:scale-100 transition-transform duration-500" />
 
+          {/* Image Container with rounded edges and aspect ratio */}
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800 w-full">
             <img
               src={imageUrl}
               alt="Manoj R. Professional Portrait"
               className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
             />
+            {/* Gradient overlay for professional depth */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-60" />
           </div>
 
-          {/* Floating badge */}
+          {/* Floating Badge (Manoj R. Portfolio - ECE Engineer) */}
           <div className="absolute -bottom-6 -right-4 bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-800 hidden lg:block">
             <p className="text-brand-sage font-bold text-sm">ECE ENGINEER</p>
             <p className="text-slate-400 text-[10px] font-medium uppercase tracking-widest">Manoj R. Portfolio</p>
           </div>
         </div>
 
-        {/* RIGHT SIDE: Content Section (60% width / 7 of 12 columns) */}
+        {/* RIGHT SIDE: Content Section (60% width) */}
         <div className="space-y-6 md:col-span-7">
           <header>
             <span className="px-3 py-1 bg-brand-sage/10 text-brand-sage rounded-full text-xs font-bold uppercase tracking-wider">
@@ -44,6 +49,7 @@ export default function About() {
             </h2>
           </header>
 
+          {/* Body Content */}
           <div className="space-y-5">
             <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-400 font-medium">
               Studying <span className="text-slate-900 dark:text-white italic">Electronics and Communication Engineering (ECE)</span> has equipped me with a unique dual perspective on technology.
@@ -56,6 +62,7 @@ export default function About() {
             </p>
           </div>
 
+          {/* Action Button */}
           <div className="pt-6">
             <button className="btn-primary flex items-center gap-3">
               <FontAwesomeIcon icon={faFileDownload} />
