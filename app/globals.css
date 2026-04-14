@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-sage: #8A9A5B;
+  --color-brand-white: #FFFFFF;
+  --color-text-main: #2D3436;
+  --color-bg-subtle: #F9FBF7;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+/* Custom Component Classes */
+@utility section-container {
+  padding-block: 5rem; /* py-20 */
+  padding-inline: 1.5rem; /* px-6 */
+  max-width: 72rem; /* max-w-6xl */
+  margin-inline: auto;
+}
+
+@utility btn-primary {
+  background-color: var(--color-brand-sage);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    scale: 0.95;
+  }
+}
+
+@utility btn-outline {
+  border: 2px solid var(--color-brand-sage);
+  color: var(--color-brand-sage);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: var(--color-brand-sage);
+    color: white;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 transition-colors duration-300;
+  }
+  
+  /* Apply dark mode styles to the body globally */
+  .dark body {
+    @apply bg-slate-950 text-slate-100;
+  }
+}
+
+body {
+  background-color: var(--color-brand-white);
+  color: var(--color-text-main);
+}
+
+/* In globals.css */
+@theme {
+  --color-brand-sage: #8A9A5B;
+  --color-brand-subtle: #F9FBF7;
+}
+
+/* Add this to allow smooth scroll when clicking nav links */
+html {
+  scroll-behavior: smooth;
+}
