@@ -67,7 +67,7 @@ export default function Skills() {
   return (
     <section id="skills" className="section-container bg-slate-50 dark:bg-slate-950 py-24 transition-colors duration-300">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold mb-4 text-slate-950 dark:text-white tracking-tight">Technical Arsenal</h2>
+        <h2 className="text-4xl font-bold mb-4 text-slate-950 dark:text-white tracking-tight">Technical Stack</h2>
         <p className="max-w-xl mx-auto text-slate-600 dark:text-slate-400 font-medium">
           A dual-threat expertise spanning physical silicon and digital architecture.
         </p>
