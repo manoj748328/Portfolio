@@ -29,7 +29,7 @@ const hardwareSkills = [
   },
   { 
     name: "PCB Design", 
-    detail: "Altium, KiCad, Fabrication",
+    detail: "KiCad, Fabrication",
     bgColor: "bg-slate-950 text-white", 
     iconColor: "text-brand-sage",
     tag: "Layout"
