@@ -7,7 +7,7 @@ export default function About() {
   // 1. Paste your direct image link here.
   // Make sure it ends with an image extension (like .jpg or .png).
   // For now, I have created a sample link representing your image.
-  const imageUrl = "\WhatsApp Image 2026-04-14 at 17.58.47.jpeg"; 
+  const imageUrl = "\WhatsApp Image 2026-04-14 at 17.58.47.jpeg";
 
   return (
     <section id="about" className="section-container pt-32 bg-white dark:bg-slate-950 transition-colors duration-300">
@@ -62,12 +62,15 @@ export default function About() {
             </p>
           </div>
 
-          {/* Action Button */}
           <div className="pt-6">
-            <button className="btn-primary flex items-center gap-3">
+            <a
+              href="/Resume.pdf"
+              download="My_Resume.pdf" // This forces the download instead of opening it in a tab
+              className="btn-primary flex items-center gap-3 w-fit"
+            >
               <FontAwesomeIcon icon={faFileDownload} />
               Download Resume
-            </button>
+            </a>
           </div>
         </div>
 
