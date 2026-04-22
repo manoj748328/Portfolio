@@ -3,6 +3,7 @@ import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
 import Experience from "@/components/sections/Experience";
+import Hackathons from "@/components/sections/Hackathons & Innovation"
 import Contact from "@/components/sections/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -16,6 +17,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Experience />
+      <Hackathons/>
       <Contact />
 
 

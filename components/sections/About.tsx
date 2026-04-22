@@ -61,17 +61,6 @@ export default function About() {
               I am particularly interested in the intersection of <span className="text-brand-sage font-semibold">IoT and Embedded Intelligence</span>, aiming to create integrated systems that are not only functional but also sustainable and impactful.
             </p>
           </div>
-
-          <div className="pt-6">
-            <a
-              href="/Resume.pdf"
-              download="My_Resume.pdf" // This forces the download instead of opening it in a tab
-              className="btn-primary flex items-center gap-3 w-fit"
-            >
-              <FontAwesomeIcon icon={faFileDownload} />
-              Download Resume
-            </a>
-          </div>
         </div>
 
       </div>

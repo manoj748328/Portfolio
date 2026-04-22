@@ -87,12 +87,6 @@ export default function Projects() {
 
             {/* Simple Footer Links */}
             <div className="flex items-center justify-between border-t border-slate-100 dark:border-slate-800 pt-4">
-              <a href="#" className="text-xs font-bold text-slate-400 hover:text-brand-sage transition-colors">
-                <FontAwesomeIcon icon={faGithub} className="mr-1" /> Code
-              </a>
-              <button className="text-brand-sage text-xs font-bold">
-                Details <FontAwesomeIcon icon={faArrowRight} className="ml-1 text-[10px]" />
-              </button>
             </div>
           </div>
         ))}

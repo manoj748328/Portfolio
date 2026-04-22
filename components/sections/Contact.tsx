@@ -64,7 +64,7 @@ export default function Contact() {
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a 
-              href="#" // Add your GitHub link here when ready
+              href="https://github.com/manoj748328" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white/70 hover:text-white text-3xl transition-all hover:-translate-y-1"

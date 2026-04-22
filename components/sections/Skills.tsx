@@ -124,10 +124,6 @@ export default function Skills() {
                       {skill.detail}
                     </p>
                   </div>
-                  
-                  <button className="flex items-center gap-2 text-xs font-bold group-hover:gap-4 transition-all uppercase tracking-tighter">
-                    Details <ChevronRight size={14} className={skill.iconColor} />
-                  </button>
                 </div>
               </div>
             ))}
